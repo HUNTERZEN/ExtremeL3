@@ -1,3 +1,4 @@
+
 # 🚀 Smart Performance Module — Realme GT Neo 3T
 
 ![Realme GT Neo 3T](https://img.shields.io/badge/Device-Realme%20GT%20Neo%203T-orange?style=for-the-badge&logo=android)
@@ -48,6 +49,3 @@ This module achieves a professional balance between raw gaming power and daily b
 2.  Open your root manager (Magisk or KernelSU).
 3.  Select the zip file and flash.
 4.  **Reboot** your device to initialize the optimizations.
-
----
-
