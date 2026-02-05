@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Extreme L3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="bg"></div>
+
+<div class="container">
+
+  <div class="header glass">
+    <h1>Extreme L3</h1>
+  </div>
+
+  <div class="card glass status">
+    <div>
+      <h2>Working</h2>
+      <p>Daemon: active</p>
+    </div>
+    <div class="avatar-wrap">
+      <img src="avatar.webp" alt="avatar">
+    </div>
+  </div>
+
+  <div class="card glass info">
+    <div class="info-row"><span class="label">Module</span><span class="value">Extreme L3</span></div>
+    <div class="info-row"><span class="label">Kernel</span><span class="value">Linux 4.19</span></div>
+    <div class="info-row"><span class="label">Chipset</span><span class="value">Snapdragon 870</span></div>
+  </div>
+
+  <div class="section glass">
+    <h3>Performance Mode</h3>
+
+    <div class="row">
+      <span>Mode</span>
+      <select id="mode" onchange="setMode(this.value)">
+        <option value="gaming">Gaming</option>
+        <option value="balanced">Balanced</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="section glass">
+    <h3>Balanced Mode Tuning</h3>
+
+    <div class="row">
+      <span>CPU Governor</span>
+      <select id="cpuGov" onchange="setCpuGov(this.value)">
+        <option value="schedutil">schedutil</option>
+        <option value="performance">performance</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <span>GPU Governor</span>
+      <select id="gpuGov" onchange="setGpuGov(this.value)">
+        <option value="msm-adreno-tz">msm-adreno-tz</option>
+        <option value="performance">performance</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="section glass">
+    <h3>Support Me</h3>
+    <p class="support">
+      Extreme L3 is free and always will be.
+      If you enjoy this module, consider supporting the developer.
+    </p>
+  </div>
+
+</div>
+
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
+

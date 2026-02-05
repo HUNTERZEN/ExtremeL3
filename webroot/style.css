@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #eef0ff;
+  background: #0c0c14;
+}
+
+.bg {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 10%, #7a5cff44, transparent 40%),
+    radial-gradient(circle at 80% 80%, #00ffd533, transparent 40%);
+  filter: blur(40px);
+  z-index: -1;
+}
+
+.container { padding: 16px; }
+
+.glass {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 18px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lang { opacity: 0.6; font-size: 13px; }
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status h2 { margin: 0; font-size: 18px; }
+.status p { margin-top: 6px; font-size: 13px; opacity: 0.75; }
+
+.icon { font-size: 40px; }
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.label { opacity: 0.6; font-size: 13px; }
+.value { font-size: 14px; font-weight: 500; }
+
+.section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.75;
+  margin-bottom: 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.row:last-child { border-bottom: none; }
+
+select, input[type="checkbox"] {
+  accent-color: #a88bff;
+}
+
+select {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 6px 10px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg,#9f8cff,#cbb7ff);
+  color: #000;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.support {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* MODE POPUP (TOAST) */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(30,30,40,0.9);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+.avatar-wrap {
+  width: 64px;
+  height: 64px;
+}
+
+.avatar-wrap img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.2);
+}
