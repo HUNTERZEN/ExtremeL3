@@ -51,7 +51,3 @@ This module achieves a professional balance between raw gaming power and daily b
 
 ---
 
-## 🤝 Credits & Acknowledgments
-* Developed for the **Realme GT Neo 3T** community.
-* Optimization logic inspired by the **Hydrogen Kernel** project.
-* Built using tools like the **DNA Android App**.
