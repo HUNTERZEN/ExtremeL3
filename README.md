@@ -1,4 +1,4 @@
-🚀 Smart Performance Module – Realme GT Neo 3T
+#🚀 Smart Performance Module – Realme GT Neo 3T
 
 A smart performance optimization module built specifically for Realme GT Neo 3T (Snapdragon 870).
 
